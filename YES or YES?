@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s,b="YES";
+        cin>>s;
+        int flag;
+        
+        char ch;
+        for(int i=0;i<s.length();i++)
+        {
+            ch=toupper(s[i]);
+            
+            if(ch==b[i])
+            {
+                flag=1;
+            }
+            else
+            {
+                flag=0;
+                break;
+            }
+        }
+        if(flag==1)
+        {
+            cout<<"YES"<<endl;
+        }
+        else
+        {
+            cout<<"NO"<<endl;
+        }
+    }
+    return 0;
+}
